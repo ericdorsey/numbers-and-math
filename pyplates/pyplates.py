@@ -34,12 +34,10 @@ with open("plates.txt", "w") as writer:
     #jfor i in range(1, 1000):
     for i in joined_perms_nums:
         for j in joined_perms_alpha:
-            #padded_num = f"{i:03}"
-            #plate = f"{padded_num}-{j}"
             plate = f"{i}-{j}"
             license_plates.append(plate)
             print(plate)
-            #writer.write(f"{plate}\n")
+            writer.write(f"{plate}\n")
 
 print(f"len_perms_alpha: {len_perms_alpha:,d}") # 17,576
 print(f"len_perms_nums: {len_perms_nums:,d}") # 1,000
