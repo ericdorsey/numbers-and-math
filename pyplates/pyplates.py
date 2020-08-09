@@ -2,8 +2,6 @@
 
 import string
 import itertools
-import pprint
-import sys
 
 # Uppercase letters of the alphabet as a list
 alphabet = [string.ascii_uppercase[i] for i in range(0, 26)]
@@ -31,7 +29,6 @@ license_plates = []
 
 # Write them all to a file
 with open("plates.txt", "w") as writer:
-    #jfor i in range(1, 1000):
     for i in joined_perms_nums:
         for j in joined_perms_alpha:
             plate = f"{i}-{j}"
